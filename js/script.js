@@ -37,8 +37,8 @@ function controlloPariDispari(num){
     return num % 2 === 0 ? "Pari" : "Dispari";
 }
 //faccio inserire pari o dispari
-function gioco(){
-const scegli= prompt("Sciegli: pari o dispari ?").toLowerCase();
+function giocoPariDispari(){
+const scelta= prompt("Sciegli: pari o dispari ?").toLowerCase();
 //scelta
 if (scelta !== "pari") {
     if (scelta !== "dispari") {
@@ -63,8 +63,10 @@ if (numeroUtente > 5) {
 }
 const numeroComputer = generaNumeroCasuale();
 const somma = numeroUtente + numeroComputer;
-const risultato = verificaPariDispari(somma);
+const risultato = controlloPariDispari(somma);
 
 //risultati
 return risultato === scelta;
 }
+const risultatoGioco = giocoPariDispari();
+console.log(risultatoGioco ? "Hai vinto!" : "Hai perso!");
