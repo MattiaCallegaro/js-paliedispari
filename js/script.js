@@ -36,6 +36,14 @@ function generaNumeroCasuale() {
 function controlloPariDispari(num){
     return num % 2 === 0 ? "Pari" : "Dispari";
 }
-
+//faccio inserire pari o dispari
+const scegli= prompt("Sciegli: pari o dispari ?").toLowerCase();
+//scelta
+if (scelta !== "pari") {
+    if (scelta !== "dispari") {
+        console.log("Scelta non valida!");
+        return false;
+    }
+}
 
 
