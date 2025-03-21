@@ -22,4 +22,20 @@ function verificaPalindromo() {
     }
 
 }
+//avvio la funzione
 verificaPalindromo();
+
+
+
+
+//Creo una funzione per generare il numero casuale
+function generaNumeroCasuale() {
+    return Math.floor(Math.random() * 5) + 1;
+}
+//Creo una funzione controllo
+function controlloPariDispari(num){
+    return num % 2 === 0 ? "Pari" : "Dispari";
+}
+
+
+
