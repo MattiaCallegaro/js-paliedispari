@@ -45,5 +45,24 @@ if (scelta !== "pari") {
         return false;
     }
 }
+//inserisci un numero
+const numeroUtente=parseInt(prompt("Inserisci un numero da 1 a 5"));
+//controllo numero
+if(isNaN(numeroUtente)){
+    console.log("Numero non valido!");
+    return false;
+}
+if (numeroUtente < 1) {
+    console.log("Numero non valido!");
+    return false; 
+}
+if (numeroUtente > 5) {
+    console.log("Numero non valido!");
+    return false;
+}
+const numeroComputer = generaNumeroCasuale();
+const somma = numeroUtente + numeroComputer;
+const risultato = verificaPariDispari(somma);
+
 
 
